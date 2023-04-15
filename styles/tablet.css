@@ -1,0 +1,257 @@
+@media screen and (max-width: 767px) {
+  .menu-header {
+    display: none;
+  }
+
+  .header-contact {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .logo {
+    margin-right: 120px;
+    padding-top: 24px;
+    padding-bottom: 22px;
+  }
+
+  .menu-link {
+    position: relative;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--dark-color);
+
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 22px;
+
+    transition: color var(--transition);
+  }
+
+  .menu-link.current::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: var(--pressed-state-color);
+    border-radius: 2px;
+    bottom: -1px;
+    left: 0;
+  }
+
+  .menu-contact {
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+    color: var(--color-adress-p);
+    font-style: normal;
+    transition: color var(--transition);
+  }
+
+  .menu-link:hover,
+  .menu-link:focus,
+  .current {
+    color: var(--pressed-state-color);
+  }
+
+  .menu-contact:hover,
+  .menu-contact:focus {
+    color: var(--pressed-state-color);
+  }
+
+  .menu-header,
+  .header-nav,
+  .head-cont {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu-item:not(:first-child) {
+    margin-left: 40px;
+  }
+
+  .header-contact {
+    margin-left: auto;
+  }
+
+  .mobile-menu-open {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact-item:not(:last-child) {
+    margin-bottom: 4px;
+  }
+}
+
+/** =============HERO============== */
+
+@media screen and (min-width: 429px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../images/hero/hero-tablet.jpg');
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 429px),
+  screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 429px),
+  screen and (min-resolution: 192dpi) and (min-width: 429px),
+  screen and (min-resolution: 2dppx) and (min-width: 429px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../images/hero/hero-tablet@2x.jpg');
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 111px;
+    padding-bottom: 108px;
+  }
+
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    margin-bottom: 40px;
+    max-width: 496px;
+  }
+}
+
+/** ========== ABOUT ==========*/
+
+@media screen and (min-width: 768px) {
+  .about-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about-title {
+    text-align: left;
+  }
+
+  .about-item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+
+  .about-item:nth-child(2n-1) {
+    margin-right: 24px;
+  }
+
+  .about-item {
+    width: calc((100% - 24px) / 2);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .about-icon {
+    display: none;
+  }
+}
+
+/** ============ TEAM =============== */
+
+@media screen and (min-width: 768px) {
+  .team {
+    padding-bottom: 104px;
+  }
+
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 64px 24px;
+    justify-content: center;
+  }
+}
+
+/** ========== CUSTOMERS ========== */
+
+@media screen and (min-width: 768px) {
+  .customers-list {
+    gap: 72px 24px;
+  }
+
+  .customers-link {
+    width: 168px;
+    height: 88px;
+  }
+}
+
+/* * ================== FOOTER ========== */
+
+@media screen and (min-width: 768px) {
+  .footer-info {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer-mail-box {
+    display: flex;
+    gap: 24px;
+  }
+
+  .footer-text {
+    max-width: 264px;
+  }
+
+  .footer-soc-block {
+    margin-left: 24px;
+  }
+
+  .footer-form-input {
+    width: 264px;
+  }
+
+  .modal {
+    width: 408px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-form {
+    margin-top: 72px;
+  }
+
+  .footer-info {
+    width: 565px;
+  }
+}
+
+/* ? ```````````` P O R T F O L I O `````````` */
+
+@media screen and (min-width: 768px) {
+  .menu-filter {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
+
+  .list-btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 64px;
+  }
+
+  .menu-filter-btn {
+    padding: 12px 24px;
+  }
+
+  .list-img {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+  }
+}
